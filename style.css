@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body { animation: mudarCor 10s infinite; /* Duração da animação de 10s e ela se repete infinitamente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+
+}
+
+
+
+@keyframes mudarCor {
+    0% {
+        background-color: #4ad5ff; /* Cor inicial */
+    }
+    25% {
+        background-color: #0dcfe9; /* Segunda cor */
+    }
+    50% {
+        background-color: #5977ff; /* Terceira cor */
+    }
+    75% {
+        background-color: #4834ff; /* Quarta cor */
+    }
+    100% {
+        background-color: #260eff; /* Cor final */
+    }
+}
+
+
+
+.container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+
+.buttons {
+    margin: 30px 0;
+    display: flex;
+    gap: 40px;
+}
+
+
+
+button { font-size: 50px;
+    padding: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.7;
+    
+}
+
+
+#rock{
+    background-color: rgb(255, 255, 57);
+}
+
+
+#paper{
+    background-color: rgb(240, 57, 57);
+}
+
+
+
+#scissors{
+    background-color: rgb(99, 255, 99);
+}
+
+
+
+
+p {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+
+.your-score span {
+
+    color: #260eff;
+}
+
+
+
+.computer-score span {
+    color: rgb(255, 35, 35);
+}
